@@ -11,6 +11,10 @@
         <?php
             $a = 10;
             echo $a;
+            //echo
+            /* palmeiras tem mundial */
+            #echo
+            
         ?>    
 </body>
 </html>
