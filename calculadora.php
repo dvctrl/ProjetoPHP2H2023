@@ -1,3 +1,4 @@
+<!-- servidor com exercicios \\10.67.96.195 -->
 <?php  
 
     echo "Calculadora soma <br/>";
