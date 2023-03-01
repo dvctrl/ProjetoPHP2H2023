@@ -12,7 +12,7 @@
             $a = 10;
             echo $a;
             //echo
-            /* palmeiras tem mundial */
+            /* teste */
             #echo
             
         ?>    
