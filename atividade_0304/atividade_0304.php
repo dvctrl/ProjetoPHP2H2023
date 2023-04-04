@@ -13,7 +13,7 @@
 
     $num1 = 20;
     $num2 = 20;
-    $operacao = 5; 
+    $operacao = 1; 
 
     echo "===== CALCULADORA =====
     <br/>Informe os dois numeros, por gentileza";
@@ -26,7 +26,7 @@
 
     switch($operacao){
         case 1:
-            echo "<br/>SELECIONADO: SOMA ➡ A soma dos valores é: ".somar($num1, $num2);
+            $valor = somar($num1, $num2);
             break;
         case 2:
             echo "<br/>SELECIONADO: SUBTRAÇÃO ➡ A subtração dos valores é: ".subtracao($num1, $num2);
@@ -39,6 +39,14 @@
             break;
         default: echo" <br/> Opção informada invalida: ";
             break;                     
+    }
+
+    imprimir($valor);
+
+
+
+    function imprimir($valor){
+        echo "o resultado da operação é: ".$valor;
     }
     function somar($num1, $num2){
         return ($num1 + $num2);
