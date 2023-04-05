@@ -11,8 +11,8 @@
         -> DETALHE IMPORTANTE, QUE É IMPOSSIVEL DIVIDIR POR ZERO.  
     */
 
-    $num1 = 20;
-    $num2 = 20;
+    $num1 = 45;
+    $num2 = 15;
     $operacao = 1; 
 
     echo "===== CALCULADORA =====
@@ -26,27 +26,33 @@
 
     switch($operacao){
         case 1:
+            $op = "soma";
             $valor = somar($num1, $num2);
             break;
         case 2:
-            echo "<br/>SELECIONADO: SUBTRAÇÃO ➡ A subtração dos valores é: ".subtracao($num1, $num2);
+            $op = "subtração";
+            $valor = subtracao($num1, $num2);
             break;
         case 3:
-            echo "<br/>SELECIONADO: MULTIPLICAÇÃO ➡ A multiplicação dos valores é: ".multiplicacao($num1, $num2);
+            $op = "multiplicação";
+            $valor = multiplicacao($num1, $num2);
             break;
         case 4:
-            echo "<br/>SELECIONADO: DIVISÃO ➡ A divisão dos valores é:".divisao($num1, $num2);
+            $op = "divisão";
+            $valor = divisao($num1, $num2);
             break;
         default: echo" <br/> Opção informada invalida: ";
+            $op = "";
+            $valor = "";
             break;                     
     }
 
-    imprimir($valor);
+    imprimir($valor,$op);
 
 
 
-    function imprimir($valor){
-        echo "o resultado da operação é: ".$valor;
+    function imprimir($valor,$op){
+        echo "o resultado da ".$op." é ".$valor;
     }
     function somar($num1, $num2){
         return ($num1 + $num2);
