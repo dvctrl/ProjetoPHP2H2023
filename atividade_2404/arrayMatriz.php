@@ -5,7 +5,7 @@
         array(3,"João",3000)
     );
     echo "<pre>";
-    print_r($emp);
+    var_dump($emp);
     echo "</pre>";
 ?>
 <?php
@@ -32,4 +32,9 @@
     } 
 
 
+?>
+<?php
+$arr = array('vm'=>'Vermelho','v'=>'verde','a'=>
+array ('azul','marrom','preto'));
+    echo json_encode($arr);
 ?>
