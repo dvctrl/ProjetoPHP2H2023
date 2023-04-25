@@ -6,8 +6,36 @@
 ?>
 
 <?php
-    $v = array("MA" => 'Maria', "VI" => 'Vitor', "DA" => "David");
+    $v = array("KA" => 'Karen', "AB" => 'Abel', "DA" => "David");
+    $v["VE"] = "VEIGA";
 
-    print_r("$v")
+    print_r($v); 
+?>
 
+<?php
+    $v = array("KA" => 'Karen', "AB" => 'Abel', "DA" => "David");
+    $v["VE"] = "VEIGA";
+    /* posso criar vetores dentro de um vetor */
+    $v["Time"] = array("goleiro" => 'weverton', 
+                        "defesa" => 'Gustavo Gomes', 
+                        "meio campista" => array("Zé Raphael", "Rafael Veiga"),
+                        "Atacante" => "Rony Rustico");
+    $v["Time"]["Campeão da America"] = true; 
+
+
+
+    print_r($v); 
+?>
+
+<?php
+    $v = array("KA" => 'Karen', "AB" => 'Abel', "DA" => "David");
+    $v["VE"] = "VEIGA";
+    /* posso criar vetores dentro de um vetor */
+    
+
+
+
+   foreach($v as $campo => $valor){
+    echo "o campo $campo é $valor";
+   }
 ?>
