@@ -19,7 +19,20 @@
 
     echo "<br/>".str_replace("micro","nano",$texto);
 
+?>
+<?php
 
+    $dataAtual = date("d/m/y");
+
+    echo "<br/> Hoje é ".$dataAtual."<br>";
+
+    $hora = date("G:i:s");
+
+    echo "<br/> Hora atual ".$hora."<br>";
+
+    $dataAtual = date("d/m/y h:i:s");
+
+    echo "<br/> Hoje é ".$dataAtual."<br>";
 
 
 ?>
