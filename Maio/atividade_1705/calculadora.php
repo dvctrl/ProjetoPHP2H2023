@@ -3,8 +3,8 @@
 
     echo "Calculadora soma <br/>";
 
-    $a = $_REQUEST['numero1'];
-    $b = $_REQUEST['numero2'];
+    $a = 12;
+    $b = 22;
     $c = $a + $b;
     $resultado =  sprintf("A soma dos valores $a e $b é: %.0f ",$c);
     
